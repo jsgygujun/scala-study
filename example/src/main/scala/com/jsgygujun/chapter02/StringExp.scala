@@ -22,5 +22,19 @@ object StringExp {
       s"""name=${name}
          |age=${age}""".stripMargin
     )
+
+    // 基本类型转 String 类型(语法:将基本类型的值+"" 即可)
+    var str1: String = true + ""
+    var str2: String = 4.5 + ""
+    var str3: String = 100 + ""
+    println(str1+","+str2+","+str3)
+
+    // String 类型转基本数值类型(语法:调用相关 API)
+    var s1 = "12"
+    var n1 = s1.toByte
+    var n2 = s1.toShort
+    var n3 = s1.toInt
+    var n4 = s1.toLong
+
   }
 }
