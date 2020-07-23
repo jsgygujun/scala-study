@@ -53,5 +53,10 @@ object FunctionExp {
     def mul(x: Int, y: Int): Int = {
       x * y
     }
+    println(calc(2,3,plus))
+    println(calc(2,3,mul))
+
+    // 匿名函数
+    println(calc(6,3,(x: Int, y: Int) => x/y))
   }
 }
