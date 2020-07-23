@@ -2,7 +2,7 @@ package com.jsgygujun.chapter02
 
 /**
  *
- * @author gujun@qiyi.com
+ * @author jsgygujun@gmail.com
  * @since 2020/7/23 10:28 上午
  */
 object DataTypeExp {
