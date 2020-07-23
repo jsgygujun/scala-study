@@ -2,7 +2,7 @@ package com.jsgygujun.chapter04
 
 /**
  *
- * @author gujun@qiyi.com
+ * @author jsgygujun@gmail.com
  * @since 2020/7/23 11:01 上午
  */
 object ForExp {
