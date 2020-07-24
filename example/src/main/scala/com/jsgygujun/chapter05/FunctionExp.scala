@@ -2,12 +2,20 @@ package com.jsgygujun.chapter05
 
 /**
  *
- * @author gujun@qiyi.com
+ * @author jsgygujun@gmail.com
  * @since 2020/7/23 11:27 上午
  */
 object FunctionExp {
 
   def main(args: Array[String]): Unit = {
+
+    // {}块的值取最后一个表达式
+    def distance(x1: Double, y1: Double, x2: Double, y2: Double): Double = {
+      import scala.math.sqrt
+      val dx = x2 - x1; val dy = y2 - y1; sqrt(dx * dx + dy * dy)
+    }
+    print(distance(0.1,0.2,0.3,0.4))
+
     // 函数 1:无参，无返回值
     def f1(): Unit = {
       println("无参，无返回值")
