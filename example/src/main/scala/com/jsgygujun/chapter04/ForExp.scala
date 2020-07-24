@@ -8,6 +8,8 @@ package com.jsgygujun.chapter04
 object ForExp {
 
   def main(args: Array[String]): Unit = {
+    // for (变量 <- 表达式)
+
     // 范围数据循环方式 1， 前后闭合
     for (i <- 1 to 3) print(i+",") // 1,2,3
     println()
@@ -46,6 +48,8 @@ object ForExp {
       i * 2
     }
     println(res) //Vector(2, 4, 6, 8, 10, 12, 14, 16, 18, 20)
+
+    for (i <- 1 to 10) yield i % 3 // 生成Vector(1,2,0,1,2,0,1,2,0,1)
 
     // 多重循环，打印乘法表
     val max = 9
