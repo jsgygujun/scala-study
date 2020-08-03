@@ -4,7 +4,7 @@ import scala.io.StdIn
 
 /**
  *
- * @author gujun@qiyi.com
+ * @author jsgygujun@gmail.com
  * @since 2020/7/23 10:24 上午
  */
 object InputExp {
