@@ -2,7 +2,7 @@ package com.jsgygujun.chapter06
 
 /**
  * 在Java 中，通常会用到既有示例方法又有静态方法的类，在Scala中，可以通过类和类的同名的"伴生"对象来达到同样的目的。
- *
+ * 类和类的伴生对象可以相互访问私有特性，但是必须位于同一个源文件中。
  * @author jsgygujun@gmail.com
  * @since 2020/8/3 9:58 上午
  */
