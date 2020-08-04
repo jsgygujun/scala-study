@@ -8,15 +8,15 @@ package com.jsgygujun.chapter04
 object ForExp {
 
   def main(args: Array[String]): Unit = {
-    // for (变量 <- 表达式)
-
     forDemo01()
     forDemo02()
     forDemo03()
-
-    for (i <- 1 to 10) yield i % 3 // 生成Vector(1,2,0,1,2,0,1,2,0,1)
-
-
+    forDemo04()
+    forDemo05()
+    forDemo06()
+    forDemo07()
+    forDemo08()
+    forDemo09()
   }
 
   /**
@@ -109,7 +109,8 @@ object ForExp {
   }
 
   /**
-   * 多重循环，打印乘法表
+   * 多重循环
+   * 打印乘法表
    */
   def forDemo09(): Unit = {
     val max = 9
@@ -119,12 +120,6 @@ object ForExp {
     } {
       print(j + "x" + i + "=" + (i*j) + "\t")
       if (j == i) println()
-    }
-    for (i <- 1 to max) {
-      for (j <- 1 to i) {
-        print(j + "x" + i + "=" + (i*j) + "\t")
-      }
-      println()
     }
   }
 
