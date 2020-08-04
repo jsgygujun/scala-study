@@ -6,7 +6,7 @@ package com.jsgygujun.chapter05
  * @author jsgygujun@gmail.com
  * @since 2020/8/4 11:56 上午
  */
-object LazyCaclExp {
+object LazyCalcExp {
 
   def main(args: Array[String]): Unit = {
     lazy val res = sum(10, 29)
