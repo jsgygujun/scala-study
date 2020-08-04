@@ -7,10 +7,18 @@ package com.jsgygujun.chapter03
  */
 object IfExp {
   def main(args: Array[String]): Unit = {
-    def max(x: Int, y: Int): Int = {
-      if (x > y) x else y // x > y ? x : y
-    }
-    println(max(5, 6))
+    ifDemo01()
+    println(max(4, 8))
+  }
+
+  def ifDemo01(): Unit = {
+    val age = 19
+    val isAdult = if (age >= 18) true else false
+    println(isAdult)
+  }
+
+  def max(x: Int, y: Int): Int = {
+    if (x > y) x else y
   }
 
 }
