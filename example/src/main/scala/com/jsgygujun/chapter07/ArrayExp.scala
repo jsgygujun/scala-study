@@ -1,18 +1,65 @@
 package com.jsgygujun.chapter07
 
+import org.junit.Test
+
 import scala.collection.mutable.ArrayBuffer
 
 /**
+ * Array，不可变对象
  *
  * @author jsgygujun@gmail.com
  * @since 2020/7/23 2:13 下午
  */
-object ArrayExp {
-  def main(args: Array[String]): Unit = {
+class ArrayExp {
+
+  /**
+   * 使用类构造器来构造Array对象
+   */
+  @Test
+  def create01(): Unit = {
     // 不可变数组
     // new 是关键字
     // [Int]是指定可以存放的数据类型，如果希望存放任意数据类型，则指定 Any
     // (10)，表示数组的大小，确定后就不可以变化
+    val arr = new Array[Int](10)
+    println(arr.toList.mkString(","))
+  }
+
+  /**
+   * 使用伴生对象来构造Array对象
+   */
+  @Test
+  def create02(): Unit = {
+    val arr = Array("Hello", "World") // 使用伴生对象构造Array, 长度为2类型为String的数组
+    println(arr.mkString(","))
+  }
+
+  /**
+   * 二维数组
+   */
+  @Test
+  def create03(): Unit = {
+    val arr2d = Array.ofDim[Int](2, 3)
+    for (i <- arr2d.indices; j <- arr2d(0).indices) {
+      arr2d(i)(j) = i+j
+    }
+    arr2d.foreach(arr => println(arr.mkString(",")))
+  }
+
+  /**
+   * 更新数组元素
+   */
+  @Test
+  def update(): Unit = {
+    val arr = Array(1,2,3,4,5)
+    arr(0) = 100
+    arr.update(2, 99)
+    println(arr.mkString(","))
+  }
+
+
+  def main(args: Array[String]): Unit = {
+
     val arr1 = new Array[Int](10)
     println(arr1.length) // 10
 
