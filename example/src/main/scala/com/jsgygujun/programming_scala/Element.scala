@@ -1,0 +1,12 @@
+package com.jsgygujun.programming_scala
+
+/**
+ *
+ * @author jsgygujun@gmail.com
+ * @since 2020/8/12 10:04 上午
+ */
+abstract class Element {
+  def contents: Array[String]
+  def height: Int = contents.length
+  def width: Int = if (height == 0) 0 else contents(0).length
+}
