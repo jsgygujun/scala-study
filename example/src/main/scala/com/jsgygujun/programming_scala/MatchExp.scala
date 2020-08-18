@@ -1,6 +1,5 @@
 package com.jsgygujun.programming_scala
 
-import java.util.function.BinaryOperator
 
 import org.junit.Test
 
